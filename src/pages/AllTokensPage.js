@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import 'feather-icons'
 
 import TopTokenList from '../components/TokenList'
-import { TYPE } from '../Theme'
+import { TYPE, ThemedBackground } from '../Theme'
+import { transparentize } from 'polished'
 import Panel from '../components/Panel'
 import { useAllTokenData } from '../contexts/TokenData'
 import { PageWrapper, FullWrapper } from '../components'
@@ -21,6 +22,7 @@ function AllTokensPage() {
 
   return (
     <PageWrapper>
+      <ThemedBackground backgroundColor={transparentize(0.8, '#FFD700')} />
       <FullWrapper>
         <RowBetween>
           <TYPE.largeHeader>Top Tokens</TYPE.largeHeader>

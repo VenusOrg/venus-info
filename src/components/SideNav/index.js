@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   z-index: 9999;
   box-sizing: border-box;
   /* background-color: #1b1c22; */
-  background: linear-gradient(193.68deg, #1b1c22 0.68%, #000000 100.48%);
+  background: linear-gradient(193.68deg,#FFD700 0.68%,#1142AA 100.48%);
   color: ${({ theme }) => theme.bg2};
 
   @media screen and (max-width: 800px) {
@@ -164,30 +164,30 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://uniswap.org" target="_blank">
-                Uniswap.org
+              <Link href="https://venusdex.org" target="_blank">
+                venusdex.org
               </Link>
             </HeaderText>
-            <HeaderText>
+            {/* <HeaderText>
               <Link href="https://v1.uniswap.info" target="_blank">
                 V1 Analytics
               </Link>
-            </HeaderText>
-            <HeaderText>
+            </HeaderText> */}
+            {/* <HeaderText>
               <Link href="https://uniswap.org/docs/v2" target="_blank">
                 Docs
               </Link>
-            </HeaderText>
+            </HeaderText> */}
             <HeaderText>
               <Link href="https://discord.com/invite/XErMcTq" target="_blank">
                 Discord
               </Link>
             </HeaderText>
-            <HeaderText>
+            {/* <HeaderText>
               <Link href="https://twitter.com/UniswapProtocol" target="_blank">
                 Twitter
               </Link>
-            </HeaderText>
+            </HeaderText> */}
             <Toggle isActive={isDark} toggle={toggleDarkMode} />
           </AutoColumn>
           {!below1180 && (
@@ -202,10 +202,10 @@ function SideNav({ history }) {
           )}
         </DesktopWrapper>
       ) : (
-        <MobileWrapper>
-          <Title />
-        </MobileWrapper>
-      )}
+          <MobileWrapper>
+            <Title />
+          </MobileWrapper>
+        )}
     </Wrapper>
   )
 }

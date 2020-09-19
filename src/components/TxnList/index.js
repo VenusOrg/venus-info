@@ -434,15 +434,15 @@ function TxnList({ transactions, symbol0Override, symbol1Override, color }) {
         ) : filteredList.length === 0 ? (
           <EmptyCard>No recent transactions found.</EmptyCard>
         ) : (
-          filteredList.map((item, index) => {
-            return (
-              <div key={index}>
-                <ListItem key={index} index={index + 1} item={item} />
-                <Divider />
-              </div>
-            )
-          })
-        )}
+              filteredList.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <ListItem key={index} index={index + 1} item={item} />
+                    <Divider />
+                  </div>
+                )
+              })
+            )}
       </List>
       <PageButtons>
         <div
